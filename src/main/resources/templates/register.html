@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>User Registration</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background: url('/images/office-bg.jpg') no-repeat center center fixed; background-size: cover;">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="/">
+            Smart Job Portal
+        </a>
+
+    </div>
+
+</nav>
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card shadow p-4"
+                 style="background: rgba(255,255,255,0.90); border-radius:15px;">
+
+                <h2 class="text-center text-success mb-4">
+                    User Registration
+                </h2>
+
+                <form action="/saveUser" method="post">
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text"
+                               name="name"
+                               class="form-control"
+                               placeholder="Enter Full Name"
+                               required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email"
+                               name="email"
+                               class="form-control"
+                               placeholder="Enter Email"
+                               required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password"
+                               name="password"
+                               class="form-control"
+                               placeholder="Enter Password"
+                               required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mobile Number</label>
+                        <input type="text"
+                               name="mobile"
+                               class="form-control"
+                               placeholder="Enter Mobile Number"
+                               required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Qualification</label>
+
+                        <select name="qualification" class="form-select">
+
+                            <option>Select Qualification</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                            <option>B.Tech</option>
+                            <option>M.Tech</option>
+                            <option>B.Sc</option>
+                            <option>M.Sc</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">Skills</label>
+
+                        <textarea
+                            name="skills"
+                            class="form-control"
+                            rows="3"
+                            placeholder="Example: Java, Spring Boot, MySQL, HTML, CSS, JavaScript"></textarea>
+
+                    </div>
+
+                    <button type="submit"
+                            class="btn btn-success w-100">
+                        Register
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
